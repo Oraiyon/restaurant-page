@@ -1,2 +1,4 @@
 import "./styles.css"
-console.log(0)
+import { sayHi } from "./tabs/home";
+
+sayHi()
