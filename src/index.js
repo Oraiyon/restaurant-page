@@ -42,7 +42,8 @@ footer.classList.add("footer");
 container.appendChild(footer);
 footer.innerText= "For The Odin Project";
 
-displayHome()
+displayHome();
+displayMenu();
 
 homeTab.addEventListener("click", () => {
     mediumHome.setAttribute("style", "display:flex;");
@@ -60,5 +61,4 @@ menuTab.addEventListener("click", () => {
     homeTab.setAttribute("style", "background-color: var(--primary); color: white;");
     menuTab.setAttribute("style", "background-color: black; color: var(--secondary);");
     contactTab.setAttribute("style", "background-color: var(--primary); color: white;");
-    displayMenu();
 });
