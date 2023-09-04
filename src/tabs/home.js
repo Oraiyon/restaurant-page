@@ -1,14 +1,14 @@
-import { content } from "../index";
+import { mediumHome } from "../index";
 
 export const displayHome= () => {
     const name= document.createElement("h1");
     name.classList.add("name");
     name.innerText= "Food Restaurant";
-    content.appendChild(name);
+    mediumHome.appendChild(name);
 
     const descriptionBox= document.createElement("div");
     descriptionBox.classList.add("descriptionBox");
-    content.appendChild(descriptionBox);
+    mediumHome.appendChild(descriptionBox);
     const title1= document.createElement("h2");
     title1.innerText= "Description";
     descriptionBox.appendChild(title1);
@@ -18,7 +18,7 @@ export const displayHome= () => {
 
     const hoursBox= document.createElement("div");
     hoursBox.classList.add("hoursBox");
-    content.appendChild(hoursBox);
+    mediumHome.appendChild(hoursBox);
     const title2= document.createElement("h2");
     title2.innerText= "Hours";
     hoursBox.appendChild(title2);
@@ -28,7 +28,7 @@ export const displayHome= () => {
 
     const locationBox= document.createElement("div");
     locationBox.classList.add("locationBox");
-    content.appendChild(locationBox);
+    mediumHome.appendChild(locationBox);
     const title3= document.createElement("h2");
     title3.innerText="Location";
     locationBox.appendChild(title3);
