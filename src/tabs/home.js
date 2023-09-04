@@ -1,31 +1,6 @@
-export const displayHome= (() => {
-    const container = document.querySelector("#container");
-    
-    const header= document.createElement("div");
-    header.classList.add("header");
-    container.appendChild(header);
+import { content } from "../index";
 
-    const homeTab= document.createElement("button");
-    homeTab.classList.add("home");
-    homeTab.innerText= "Home";
-    header.appendChild(homeTab);
-    const menuTab= document.createElement("button");
-    menuTab.classList.add("menu");
-    menuTab.innerText= "Menu";
-    header.appendChild(menuTab);
-    const contactTab= document.createElement("button");
-    contactTab.classList.add("contact");
-    contactTab.innerText= "Contact";
-    header.appendChild(contactTab);
-
-    const main= document.createElement("div");
-    main.classList.add("main");
-    container.appendChild(main);
-
-    const content=document.createElement("div");
-    content.classList.add("content");
-    main.appendChild(content);
-
+export const displayHome= () => {
     const name= document.createElement("h1");
     name.classList.add("name");
     name.innerText= "Food Restaurant";
@@ -60,9 +35,4 @@ export const displayHome= (() => {
     const location= document.createElement("div");
     location.innerText= "123 Unknown Street, Knowhere, Mars";
     locationBox.appendChild(location);
-
-    const footer= document.createElement("div");
-    footer.classList.add("footer");
-    container.appendChild(footer);
-    footer.innerText= "For The Odin Project";
-})();
+};
