@@ -1,4 +1,4 @@
 import "./styles.css"
-import { sayHi } from "./tabs/home";
+import { displayHome } from "./tabs/home";
 
-sayHi()
+displayHome()
