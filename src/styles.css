@@ -46,7 +46,14 @@ button{
     align-items: center;
 }
 
-.content{
+.content{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mediumHome, .mediumMenu, .mediumContact{
     background-color: var(--primary);
     width: max(80%, 800px);
     height: 90%;
@@ -57,6 +64,10 @@ button{
     justify-content: center;
     gap: 50px;
     padding: 100px;
+}
+
+.mediumMenu, .mediumContact{
+    display: none;
 }
 
 .name, .descriptionBox, .hoursBox, .locationBox{
