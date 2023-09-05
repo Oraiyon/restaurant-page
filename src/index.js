@@ -1,6 +1,7 @@
 import "./styles.css"
 import { displayHome } from "./tabs/home";
 import { displayMenu } from "./tabs/menu";
+import { displayContact } from "./tabs/contact";
 
 const header= document.createElement("div");
 header.classList.add("header");
@@ -35,7 +36,7 @@ mediumMenu.classList.add("mediumMenu");
 content.appendChild(mediumMenu);
 export const mediumContact=document.createElement("div");
 mediumContact.classList.add("mediumContact");
-content.appendChild(mediumMenu);
+content.appendChild(mediumContact);
 
 const footer= document.createElement("div");
 footer.classList.add("footer");
@@ -44,6 +45,7 @@ footer.innerText= "For The Odin Project";
 
 displayHome();
 displayMenu();
+displayContact();
 
 homeTab.addEventListener("click", () => {
     mediumHome.setAttribute("style", "display:flex;");
@@ -61,4 +63,13 @@ menuTab.addEventListener("click", () => {
     homeTab.setAttribute("style", "background-color: var(--primary); color: white;");
     menuTab.setAttribute("style", "background-color: black; color: var(--secondary);");
     contactTab.setAttribute("style", "background-color: var(--primary); color: white;");
+});
+
+contactTab.addEventListener("click", () => {
+    mediumHome.setAttribute("style", "display:none;");
+    mediumMenu.setAttribute("style", "display:none;");
+    mediumContact.setAttribute("style", "display:flex;");
+    homeTab.setAttribute("style", "background-color: var(--primary); color: white;");
+    menuTab.setAttribute("style", "background-color: var(--primary); color: white;");
+    contactTab.setAttribute("style", "background-color: black; color: var(--secondary);");
 });
