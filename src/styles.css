@@ -50,6 +50,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .mediumHome, .mediumMenu, .mediumContact{
@@ -70,7 +71,7 @@ button{
     height: 100vh;
 }
 
-.name, .descriptionBox, .hoursBox, .locationBox, .drinks, .drinkBox, .foods, .foodBox{
+.name, .descriptionBox, .hoursBox, .locationBox, .drinks, .drinkBox, .foods, .foodBox, .contactBox{
     width: max(100%, 750px);
     background-color: black;
     padding: 10px;
@@ -128,6 +129,18 @@ img{
     grid-column: 2;
     grid-row: 1/3;
     margin: 10px 0 0 40px;
+}
+
+.contactBox h2, .contactBox p{
+    text-align: center;
+}
+
+.mediumContact{
+    height: 100vh;
+}
+
+.mediumContact .name{
+    margin-top: -25px;
 }
 
 .footer{
