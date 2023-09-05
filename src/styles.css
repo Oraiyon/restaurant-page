@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
     --primary: rgb(70, 70, 70);
@@ -39,63 +39,83 @@ button{
 }
 
 .main{
-    height: 100Vh;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
 }
 
 .content{  
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
 .mediumHome, .mediumMenu, .mediumContact{
     background-color: var(--primary);
     width: max(80%, 800px);
-    height: 90%;
     border-radius: 16px;
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     padding: 100px;
+    margin: 40px 0;
 }
 
 .mediumHome{
     display: flex;
+    height: 100vh;
 }
 
-.name, .descriptionBox, .hoursBox, .locationBox{
+.name, .descriptionBox, .hoursBox, .locationBox, .drinks, .drinkBox, .foods, .foodBox{
     width: max(100%, 750px);
     background-color: black;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     border: 10px solid var(--secondary);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 h1{
     text-align: center;
+    font-size: 2.5rem;
 }
 
 h2{
-    font-size: 2rem;
-    margin-top: -10px;
-}
-
-.name{
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .hoursBox div, .locationBox div{
     text-align: center;
+    padding-bottom: 10px;
+}
+
+img{
+    border-radius: 8px;
+}
+
+.mediumHome img{
+    height: 300px;
+    width: 500px;
+}
+
+.drinks, .foods{
+    width: max(50%, 375px);
+}
+
+.mediumMenu img {
+    width: 250px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.mediumMenu .name{
+    margin-top: -39px;
 }
 
 .footer{
