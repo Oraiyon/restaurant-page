@@ -1,4 +1,5 @@
 import { mediumHome } from "../index";
+import restaurantImgUrl from "../assets/restaurant.jpg"
 
 export const displayHome= () => {
     const name= document.createElement("h1");
@@ -35,4 +36,8 @@ export const displayHome= () => {
     const location= document.createElement("div");
     location.innerText= "123 Unknown Street, Knowhere, Mars";
     locationBox.appendChild(location);
+
+    const restaurantImg= document.createElement("img");
+    restaurantImg.src= restaurantImgUrl;
+    mediumHome.appendChild(restaurantImg);
 };
